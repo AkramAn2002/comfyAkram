@@ -1,0 +1,77 @@
+.single-product {
+  padding: 2rem 0;
+}
+.section-center {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.single-product-center {
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem 2rem;
+}
+.single-product-img {
+  height: 25rem;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+.single-product-company {
+  font-size: 1.2rem;
+  color: var(--clr-grey-8);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  margin-bottom: 1.25rem;
+}
+.single-product-price {
+  color: var(--clr-grey-3);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.text-slanted {
+  font-family: "Kaushan Script", cursive;
+}
+.single-product-desc {
+  max-width: 25em;
+  line-height: 1.8;
+}
+@media screen and (min-width: 992px) {
+  .single-product-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.btn {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 0.375rem 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  transition: var(--transition);
+  border-color: transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--clr-primary-7);
+  color: var(--clr-black);
+}
+.img {
+  width: 100%;
+  display: block;
+}
+.btn3 {
+  background-color: transparent;
+  border: 2px solid #ba5d2c;
+  font-size: 15px;
+  color: #ba5d2c;
+  position: absolute;
+  z-index: 999;
+  margin-left: 52%;
+  top: 0;
+  margin-top: 654px;
+}
+.btn3:hover {
+  color: white;
+  background-color: #ba5d2c;
+}

@@ -1,0 +1,160 @@
+/*******RESPONSIVE DO IT DO IT***********/
+.sec1 {
+  background-image: none;
+  height: 260px;
+}
+ul li {
+  color: #102a42;
+}
+
+.fa-solid {
+  color: #102a42;
+}
+.fa-bars {
+  color: white;
+}
+.containerLocation {
+  background-color: #f1f5f8;
+  padding-top: 50px;
+  padding-left: 5%;
+  height: 50%;
+  margin-top: 4%;
+}
+.location {
+  color: #486682;
+  font-size: 35px;
+}
+.ContainerGrids {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-left: 2%;
+  justify-content: center;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+}
+.card-container {
+  padding-top: 5px;
+  margin: 0rem 0;
+}
+.leftGrid {
+  height: 100%;
+}
+input[type="text"] {
+  width: 100%;
+  height: 25px;
+  padding-left: 2px;
+}
+.leftGrid h3 {
+  font-weight: normal;
+  font-weight: 450;
+  margin-top: 5px;
+  color: #102a42;
+}
+.leftGrid p {
+  color: #102a42;
+  font-weight: 100;
+  margin-top: 5px;
+}
+.content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 75px;
+}
+.content h1 {
+  margin-bottom: 25px;
+}
+.content b {
+  color: #ba5d2c;
+}
+li a {
+  color: #102a42;
+  font-weight: bold;
+  text-decoration: none;
+}
+.filter-error {
+  position: absolute;
+  padding-top: 100px;
+  margin-left: 20%;
+  font-size: 25px;
+  color: #102a42;
+}
+/*******RESPONSIVE DO IT DO IT***********/
+@media (max-width: 1300px) and (min-width: 799px) {
+  .card {
+    grid-template-columns: repeat(2, 380px);
+  }
+}
+@media (max-width: 840px) {
+  .card {
+    grid-template-columns: repeat(1, 380px);
+  }
+  .card-image {
+    width: 279px;
+    height: 248px;
+    padding-top: 15px;
+  }
+  .filter-error {
+    margin-left: 27%;
+    font-size: 22px;
+  }
+}
+@media (max-width: 1200px) {
+  .card-image {
+    width: 379px;
+    height: 248px;
+    padding-top: 15px;
+  }
+  .filter-error {
+    margin-left: 30%;
+    font-size: 21px;
+  }
+}
+@media (max-width: 1050px) {
+  .card {
+    grid-template-columns: repeat(1, 579px);
+  }
+  .card-image {
+    width: 579px;
+    height: 248px;
+    padding-top: 15px;
+  }
+  .filter-error {
+    margin-left: 37%;
+    font-size: 19px;
+  }
+}
+@media (max-width: 844px) {
+  .card {
+    grid-template-columns: repeat(1, 479px);
+  }
+  .card-image {
+    width: 479px;
+    height: 248px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 744px) {
+  .card {
+    grid-template-columns: repeat(1, 379px);
+  }
+  .card-image {
+    width: 379px;
+    height: 248px;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 644px) {
+  .card {
+    grid-template-columns: repeat(1, 279px);
+  }
+  .card-image {
+    width: 279px;
+    height: 248px;
+    padding-top: 15px;
+  }
+}
+
+/****maintenant il faut just ajouter les btns shop + search positionner*****/

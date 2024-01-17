@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/css1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="sec1">
+      <div class="backFloux"></div>
+      <nav>
+        <ul>
+          <button class="toggleBtn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <li><a href="index.html">home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="About.html">About</a></li>
+
+          <div class="Panier">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="nombre"><span class="cart-item-count">0</span></div>
+          </div>
+
+          <img src="../images/logo-white.svg" alt="" class="logoAkan" />
+        </ul>
+      </nav>
+      <!-- toogle sideBar_homeProduct_more -->
+
+      <div class="sidebar2-overlay">
+        <aside class="sidebar2">
+          <!-- close -->
+          <button class="sidebar-close btnX2">
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- links -->
+          <ul class="sidebar-links">
+            <li class="linkS">
+              <a href="index.html" class="sidebar2-link">
+                <i class="fas fa-home fa-fw"></i>
+                home
+              </a>
+            </li>
+            <li class="linkS">
+              <a href="products.html" class="sidebar2-link">
+                <i class="fas fa-couch fa-fw"></i>
+                products
+              </a>
+            </li>
+            <li class="linkS">
+              <a href="about.html" class="sidebar2-link">
+                <i class="fas fa-book fa-fw"></i>
+                about
+              </a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+      <!-- sideBarProducts-->
+      <div class="sideBar-overly">
+        <aside class="sidebar">
+          <button class="sidebar-close btnX1">
+            <i class="fas fa-times"></i>
+          </button>
+          <h1 class="h1">Your Bag</h1>
+          <div class="xxx"></div>
+          <footer>
+            <h3 class="h3Bis"></h3>
+            <button class="btn3">CHECKOUT</button>
+          </footer>
+        </aside>
+      </div>
+      <div class="toggleBackColor"></div>
+      <div class="textCentre">
+        <h1>Rest, Relax, Unmind</h1>
+        <h3>Embrace you choice -we do</h3>
+        <button class="btn1">SHOW NOW</button>
+      </div>
+    </section>
+    <section class="sec2">
+      <h1 class="elm"><b>/ </b>Featured</h1>
+      <div class="card"></div>
+      <button class="btn2">ALL PRODUCT</button>
+      <!-- pour eviter les probleme dans la console j'ai cree ceci a but de ne pas dupliuqer les code JavaScript -->
+      <input
+        type="text"
+        placeholder="Search..."
+        class="txtSearch"
+        style="display: none"
+      />
+      <input
+        type="range"
+        class="price-filter"
+        min="0"
+        value="50"
+        max="100"
+        style="display: none"
+      />
+    </section>
+    <script src="../js/js1.js"></script>
+    <script type="module" src="../js/app.js"></script>
+    <script>
+      const ShowProds = document.querySelector(".btn1");
+      const btnAllProduct = document.querySelector(".btn2");
+      btnAllProduct.addEventListener("click", () => {
+        window.location = "../html/products.html";
+      });
+      ShowProds.addEventListener("click", () => {
+        window.location = "../html/products.html";
+      });
+    </script>
+  </body>
+</html>
