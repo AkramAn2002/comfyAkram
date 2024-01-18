@@ -95,7 +95,6 @@ container.addEventListener("click", function (event) {
 
     containerMOM.innerHTML = htmlString;
     localStorage.setItem("produitsAjoutes", JSON.stringify(produitsAjoutes));
-    console.log("akram 2", produitsAjoutes);
 
     total += infos.price;
     localStorage.setItem("total", JSON.stringify(total));
@@ -164,7 +163,6 @@ container.addEventListener("click", function (event) {
     containerMOM.innerHTML = htmlString;
 
     localStorage.setItem("produitsAjoutes", JSON.stringify(produitsAjoutes));
-    console.log("akram 1", produitsAjoutes);
 
     total += infos.price;
     localStorage.setItem("total", JSON.stringify(total));
@@ -215,7 +213,6 @@ containerMOM.addEventListener("click", function (event) {
         produitClique.quantity = 0;
         const index = produitsAjoutes.indexOf(produitClique);
         produitsAjoutes.splice(index, 1);
-        console.log("akram", produitsAjoutes);
         localStorage.setItem("cartItemCount", produitsAjoutes.length);
         panier.innerHTML = `<span class="cart-item-count">${produitsAjoutes.length}</span>`;
         target.id = "btnX";
@@ -255,12 +252,9 @@ containerMOM.addEventListener("click", function (event) {
     totalH.innerHTML = `Total : $${total.toFixed(2)}`;
     localStorage.setItem("total", JSON.stringify(total));
     localStorage.setItem("produitsAjoutes", JSON.stringify(produitsAjoutes));
-    console.log(localStorage.getItem("produitsAjoutes"));
     container.remove();
   }
 });
 
 totalH.innerHTML = `Total : $${total.toFixed(2)}`;
 localStorage.setItem("total", JSON.stringify(total));
-console.log("logogo", localStorage.getItem("total"));
-// Call status function during initialization
